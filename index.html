@@ -26,7 +26,7 @@
       <p>{{name1}}</p>
       <hr />
       <!-- 3) Repeat 2) but only output the entered value if the ENTER key was pressed -->
-      <input @change="keymonitor" type="text" />
+      <input v-on:keyup.enter="keymonitor" type="text" />
       <p>{{name2}}</p>
     </section>
   </body>
